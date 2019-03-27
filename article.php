@@ -97,7 +97,7 @@
 
 		<ul class="nav navbar-light bg-light justify-content-end">
 		  <li class="nav-item">
-		    <a class="nav-link" href="#">Conditions générales d'utilisation</a>
+		    <a class="nav-link" href="CGU.pdf" target="_blank">Conditions générales d'utilisation</a>
 		  </li>
 		</ul>
 
