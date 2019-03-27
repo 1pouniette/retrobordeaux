@@ -30,10 +30,10 @@
 		        <a class="nav-link" href="#">Contact</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Accueil</a>
+		        <a class="nav-link" href="index.php">Accueil</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">A propos</a>
+		        <a class="nav-link" href="about.php">A propos</a>
 		      </li>
 		    </ul>
 		</nav>

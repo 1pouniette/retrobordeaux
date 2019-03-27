@@ -42,35 +42,20 @@
 
 	</header>
 
-	<!-- Marges pour l'aperçu des articles -->
-
 	<div class='container col-6'>
 
-		<!-- Aperçu article 1 -->
+		<br><h1>A propos</h1><br>
 
-		<div class="pt-5 pb-5" class="card">
-		  <img src="img/salon-du-vintage.jpg" class="card-img" alt="Exposition au salon du vintage.">
-			  <div class="card-body">
-			    <h5 class="card-title">Oubliez votre âge au salon du vintage !</h5>
-			    <p class="card-text">Dans le hangar 14, au milieu de la modernité du quai des marques, le Salon du Vintage a ouvert ses portes le 9 et 10 mars dernier. Ce ralliement des époques invite à (re)découvrir des objets du quotidien, de l’ameublement à l’automobile, en passant par la mode ou la musique. Pourquoi un tel engouement ? Eléments de réponse.</p>
-			    <a href="article.php" class="btn btn-outline-dark">Lire l'article</a>
-			  </div>
-		</div>
+		<br><p>Rétrobordeaux est un blog mais aussi un projet étudiant, tenu par 4 étudiantes en DUT MMI à l’IUT Bordeaux Montaigne. A partir du thème <i>Bordeaux à travers… le vintage !</i>, nous écrivons sur la mode, l’automobile mais aussi la musique, la nourriture, la beauté, la décoration et mode de vie ! En plus d’écrire, nous développons ce blog par nos soins en PHP et SQL sans framework, le but étant d’apprendre la programmation web et la manipulation de données. Le logo et l'apparence du site a été également pensée par nos soins, seules les photographies ne nous appartiennent pas.</p><br>
 
-		<!-- Aperçu article 2 -->
+		<p>Si vous constatez un problème, un bug, ou si vous avez une question, n’hésitez pas à nous contacter.<br><br>
 
-		<div class="pt-5 pb-5" class="card">
-		  <img src="img/mobilite.jpg" class="card-img" alt="Voiture de collection dans un paysage de campagne.">
-			  <div class="card-body">
-			    <h5 class="card-title">Mobilité urbaine : regardez dans le rétro !</h5>
-			    <p class="card-text">Passionnés de véhicules rétros, amoureux de Bordeaux, venez la découvrir ou redécouvrir sous un angle inédit. Emportez le vintage dans la voiture pour une virée au centre-ville. Cheveux au vent, roulez à travers les monuments et voyagez hors du temps.</p>
-			    <a href="#" class="btn btn-outline-dark">Lire l'article</a>
-			  </div>
-		</div>
+		Nous vous remercions de votre lecture et votre attention !<br><br>
+
+		Coralie, Julie, Tracy et Elise.<br><br>
+		</p>
 
 	</div>
-
-	<!-- Fin de l'aperçu des articles -->
 
 
 	<footer>
