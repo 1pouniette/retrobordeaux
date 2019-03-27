@@ -1,3 +1,4 @@
 # Rétrobordeaux
 
-Blog étudiant permettant de découvrir Bordeaux à travers le vintage, mais aussi de découvrir de le PHP et le SQL :) OUI
+Blog étudiant permettant de découvrir Bordeaux à travers le vintage, mais aussi de découvrir de le PHP et le SQL :) OUI 
+ok :)
