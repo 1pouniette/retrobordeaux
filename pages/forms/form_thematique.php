@@ -1,27 +1,34 @@
 <!-- Dev mettre dans la base puis afficher
 
 //formulaire -->
-<html>
-	<body>
-		<form method="post" action=""> <!--  action = page contenant du php pour récupérer les informations -->
+
+<h1>Ajouter une thématique</h1>
+
+		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
+			
 			<div id="ecr_numtheme">
 				<label for="case_numtheme" >Numéro de thématique</label> :
 			</div>
-			<input type="text" name="case_numtheme" id="case_numtheme" /></input>
+			<input class="form-control" type="text" name="case_numtheme" id="case_numtheme" /></input>
 			<br />
+			
+
 			<div id="ecr_nomtheme">
 				<label for="case_nomtheme" >Intitulé thématique</label> :
 			</div>
-			<input type="text" name="case_nomtheme" id="case_nomtheme" /></input>
+			<input class="form-control" type="text" name="case_nomtheme" id="case_nomtheme" /></input>
 			<br />
+			
+			
 			<div id="ecr_langtheme">
 				<label for="case_langtheme" >Langue</label> :
 			</div>
-			<textarea type="text" name="case_langtheme" id="case_langtheme" /></textarea>
-			<input type="submit" value="Envoyer" id="Bouton"/>
+			<textarea class="form-control" type="text" name="case_langtheme" id="case_langtheme" /></textarea>
+			
+			<input class="btn btn-secondary" type="submit" value="Envoyer" id="Bouton"/>
+
 		</form>
-	</body>
-</html>
+
 
 <!-- Récupération pour les mettres dans la base de données -->
 

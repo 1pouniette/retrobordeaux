@@ -1,27 +1,35 @@
 <!-- Dev mettre dans la base puis afficher 
 
 //formulaire -->
-<html>
-	<body>
-		<form method="post" action=""> <!--  action = page contenant du php pour récupérer les informations -->
+
+<h1>Ajouter une langue</h1>
+
+		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
+			
 			<div id="ecr_numlangue">
-				<label for="case_numlangue" >Numero de langue</label> : 
+				<label for="case_numlangue" >Numéro de langue</label> : 
 			</div>
-			<input type="text" name="case_numlangue" id="case_numlangue" /></input>
+			<input class="form-control" type="text" name="case_numlangue" id="case_numlangue" /></input>
 			<br />
+
+
 			<div id="ecr_nomlangue">
 				<label for="case_nomlangue" >Nom de langue</label> : 
 			</div>
-			<input type="text" name="case_nomlangue" id="case_nomlangue" /></input>
+			<input class="form-control" type="text" name="case_nomlangue" id="case_nomlangue" /></input>
 			<br />
+
+
 			<div id="ecr_nomlangue2">
 				<label for="case_nomlangue2" >Langue</label> : 
 			</div>
-			<textarea type="text" name="case_nomlangue2" id="case_nomlangue2" /></textarea>
-			<input type="submit" value="Envoyer" id="Bouton"/>
+			<textarea class="form-control" type="text" name="case_nomlangue2" id="case_nomlangue2" /></textarea>
+			
+			
+			<input class="btn btn-secondary" type="submit" value="Envoyer" id="Bouton"/>
+		
 		</form>
-	</body>
-</html>
+
 
 <!-- Récupération pour les mettres dans la base de données -->
 

@@ -1,27 +1,35 @@
 <!-- Dev mettre dans la base puis afficher
 
 //formulaire -->
-<html>
-	<body>
-		<form method="post" action=""> <!--  action = page contenant du php pour récupérer les informations -->
+
+<h1>Ajouter un mot-clé</h1>
+
+		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
+			
 			<div id="ecr_nummotcle">
 				<label for="case_nummotcle" >Numéro de mot clé</label> :
 			</div>
-			<input type="text" name="case_nummotcle" id="case_nummotcle" /></input>
+			<input class="form-control" type="text" name="case_nummotcle" id="case_nummotcle" /></input>
 			<br />
+			
+			
 			<div id="ecr_nommotcle">
 				<label for="case_nommotcle" >Mot clé</label> :
 			</div>
-			<input type="text" name="case_nommotcle" id="case_nommotcle" /></input>
+			<input class="form-control" type="text" name="case_nommotcle" id="case_nommotcle" /></input>
 			<br />
+			
+			
 			<div id="ecr_langmotcle">
 				<label for="case_langmotcle" >Langue</label> :
 			</div>
-			<textarea type="text" name="case_langmotcle" id="case_langmotcle" /></textarea>
-			<input type="submit" value="Envoyer" id="Bouton"/>
+			<textarea  class="form-control" type="text" name="case_langmotcle" id="case_langmotcle" /></textarea>
+			
+			
+			<input class="btn btn-secondary" type="submit" value="Envoyer" id="Bouton"/>
+
 		</form>
-	</body>
-</html>
+
 
 <!-- Récupération pour les mettres dans la base de données -->
 
