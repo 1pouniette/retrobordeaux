@@ -61,7 +61,7 @@
 			</div>
 			<select name="NumAngl" id="NumAngl">
      			<?php
- 				include ('connexionex.php');
+ 				include ('connexion.php');
 				$reponse = $bdd->query('SELECT * FROM angle');
 				 
 				while ($donnees = $reponse->fetch())
@@ -79,7 +79,7 @@
 			</div>
 			<select name="NumThem1" id="NumThem1">
      			<?php
- 				include ('connexionex.php');
+ 				include ('connexion.php');
 				$reponse = $bdd->query('SELECT * FROM thematique');
 				 
 				while ($donnees = $reponse->fetch())
@@ -97,7 +97,7 @@
 			</div>
 			<select name="NumLang" id="NumLang">
      			<?php
- 				include ('connexionex.php');
+ 				include ('connexion.php');
 				$reponse = $bdd->query('SELECT * FROM langue');
 				 
 				while ($donnees = $reponse->fetch())
@@ -116,7 +116,7 @@
 </html>
 
 <?php
-	include ('connexionex.php'); // permet le lien avec la page de la connexion à la base (pas obligatoire si la connexion est déja dans la page)
+	include ('connexion.php'); // permet le lien avec la page de la connexion à la base (pas obligatoire si la connexion est déja dans la page)
         $case_NumArt = $_POST['case_NumArt']; // récupère la date de l'avis // l'information contenu dans les crochets vient du name mis dans le formulaire
 		$case_create = $_POST['case_create']; // récupère le produit de l'avis
 		$case_title = $_POST['case_title']; // récupère l'avis
