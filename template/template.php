@@ -26,27 +26,55 @@
 
 		<!-- Navbar : début -->
   
-		<nav class="navbar navbar-expand-lg justify-content-center">
-		    <ul class="navbar-nav">
-		      <li class="nav-item">
-		        <a class="navbar-brand" href="#">
-					<img src="img/onglets_contact.svg" width="60%" height="60%" alt="Contact">
-				</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="navbar-brand" href="index.php">
-					<img src="img/onglets_accueil.svg" width="60%" height="60%" alt="Accueil">
-				</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="navbar-brand" href="index.php?page=about">
-					<img src="img/onglets_about.svg" width="60%" height="60%" alt="A propos">
-				</a>
-		      </li>
-		    </ul>
-		</nav>
+		<div id="navbar" class="container">
+
+			<div id="textes_onglets" class="row justify-content-center">
+
+				<div class="center-block" style="float:none;">
+					<a class="navbar-item" href="index.php">
+						<img src="img/onglets_contact.svg" width="80%" height="80%" alt="Contact">
+					</a>	
+				</div>
+
+				<div class="center-block" style="float:none;">
+					<a class="navbar-item" href="index.php">
+						<img src="img/onglets_accueil.svg" width="80%" height="80%" alt="Accueil">
+					</a>	
+				</div>
+
+				<div class="center-block" style="float:none;">
+					<a class="navbar-item" href="index.php?page=about">
+						<img src="img/onglets_about.svg" width="80%" height="80%" alt="A propos">
+					</a>						
+				</div>
+
+			</div>
+
+			<div id="barres_onglets" class="row justify-content-center">
+
+				<div class="center-block" style="float:none;">
+					<img src="img/onglets_barre_contact.svg" width="60%" height="60%" alt="barre contact">
+				</div>
+
+				<div class="center-block" style="float:none;">
+					<img src="img/onglets_barre_accueil.svg" width="60%" height="60%" alt="barre accueil">
+				</div>
+
+				<div class="center-block" style="float:none;">
+					<img src="img/onglets_barre_about.svg" width="60%" height="60%" alt="barre à propos">
+				</div>
+
+			</div>
 
 		<!-- Navbar : fin -->
+
+		<!-- boutons de connexion/déconnexion -->
+
+		<div style='border-bottom:1px solid #666666; padding-top: 4rem;'><!-- jolie ligne -->
+			<p>Connexion/Déconnexion</p>
+		</div> 
+
+
 
 	</header>
 
@@ -62,7 +90,7 @@
 		
 		
 
-		<ul class="nav navbar-light bg-light justify-content-between">
+		<nav class="nav navbar-light justify-content-between">
 			
 			<!-- Lien CGU -->
 			
@@ -76,9 +104,7 @@
 				<a class="nav-item nav-link" href="other/CGU.pdf" target="_blank">Conditions générales d'utilisation</a>
 		    </li>	
 
-		</ul>
-
-		
+		</nav>
 
 	</footer>	
 

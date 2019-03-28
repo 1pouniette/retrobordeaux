@@ -10,7 +10,7 @@ if(isset($_GET['page']) and !empty($_GET)) {
 } 
 // Si le parametre n'existe pas    
 else { 
-	// On donne une valeur par defaut à $page
+	// On donne une valeur par defaut à $page --> renvoie à l'accueil
 	$page = 'accueil';
 	$_page = 'accueil';
 }

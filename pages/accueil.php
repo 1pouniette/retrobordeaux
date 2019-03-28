@@ -1,29 +1,33 @@
 <!-- Page pour l'aperçu des articles -->
 <!-- Page d'accueil -->
 
+<?php
+include('fonctions.php');
+
+$articles = getArticles();
+?>
 
 
-		<!-- Aperçu article 1 -->
-
-		<div class="pt-5 pb-5" class="card">
-		  <a href="index.php?page=article" ><img src="img/salon-du-vintage.jpg" class="card-img" alt="Exposition au salon du vintage."></a>
-			  <div class="card-body">
-			    <h5 class="card-title">Oubliez votre âge au salon du vintage !</h5>
-			    <p class="card-text">Dans le hangar 14, au milieu de la modernité du quai des marques, le Salon du Vintage a ouvert ses portes le 9 et 10 mars dernier. Ce ralliement des époques invite à (re)découvrir des objets du quotidien, de l’ameublement à l’automobile, en passant par la mode ou la musique. Pourquoi un tel engouement ? Eléments de réponse.</p>
-			    <a href="index.php?page=article" class="btn btn-outline-dark">Lire l'article</a>
-			  </div>
-		</div>
-
-		<!-- Aperçu article 2 -->
+		<!-- Aperçu article -->
 
 		<div class="pt-5 pb-5" class="card">
-		  <a href="index.php?page=article" ><img src="img/mobilite.jpg" class="card-img" alt="Voiture de collection dans un paysage de campagne."></a>
+
+			<?php foreach($articles as $article): ?>
+		  <br><br><br>
+		  <a href="index.php?page=article&id=<?= $article->NumArt ?>" ><?= '<img class="img-fluid" width="100%" src="'.$article->UrlPhotA.'">'; //afficher l'image à la place du lien ?></a>
+			  
 			  <div class="card-body">
-			    <h5 class="card-title">Mobilité urbaine : regardez dans le rétro !</h5>
-			    <p class="card-text">Passionnés de véhicules rétros, amoureux de Bordeaux, venez la découvrir ou redécouvrir sous un angle inédit. Emportez le vintage dans la voiture pour une virée au centre-ville. Cheveux au vent, roulez à travers les monuments et voyagez hors du temps.</p>
-			    <a href="index.php?page=article" class="btn btn-outline-dark">Lire l'article</a>
+
+				    <h5 class="card-title"><?= $article->LibTitrA ?></h5>
+				    <p class="card-text"><?= $article->LibChapoA ?></p>
+				    <a href="index.php?page=article&id=<?= $article->NumArt ?>" class="btn btn-outline-dark">Lire l'article</a>
+
+				<?php endforeach ?>    
+			  
 			  </div>
+
 		</div>
+	</div> <!-- div qui sert à appliquer le footer hors du container de template.php sur la page d'accueil -->
 
 
 	<!-- Fin de l'aperçu des articles -->
