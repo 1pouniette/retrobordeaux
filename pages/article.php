@@ -32,7 +32,18 @@
 			
 			<h6><?= $article->LibConclA ?></h6>
 			
-			<p>mots-clés : vintage, évènement, salon, exposition, collection, générations, seconde-main, recyclage, récupération </p>
+			<p>mots-clés : 
+<?php
+
+		require('connexion.php');
+		$req = $bdd->prepare("SELECT * FROM LibMoCle.motcle WHERE NumMoCle.motclearticle = NumMoCle.motcle ");
+		$req->execute();
+		while ($data = $req->fetch());
+		$req->closeCursor();
+
+
+?>
+			</p>
 
 			<p><?= $article->LiensExternes ?></p>
 

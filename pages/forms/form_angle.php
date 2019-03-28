@@ -1,23 +1,30 @@
 <!-- Dev mettre dans la base puis afficher 
 
 //formulaire -->
+<h1>Ajouter un angle</h1><br>
 
-		<form method="post" action=""> <!--  action = page contenant du php pour récupérer les informations -->
+		<form method="post" action="" class='form-group'> <!--  action = page contenant du php pour récupérer les informations -->
+			
 			<div id="ecr_numangle">
-				<label for="case_numangle" >Numero d'angle</label> : 
+				<label for="case_numangle" >Numéro d'angle</label> : 
 			</div>
-			<input type="text" name="case_numangle" id="case_numangle" /></input>
+			<input class='form-control' type="text" name="case_numangle" id="case_numangle" /></input>
 			<br />
+
 			<div id="ecr_nomangle">
-				<label for="case_nomangle" >Nom Angle</label> : 
+				<label for="case_nomangle" >Nom de l'angle</label> : 
 			</div>
-			<input type="text" name="case_nomangle" id="case_nomangle" /></input>
+			<input class='form-control' type="text" name="case_nomangle" id="case_nomangle" /></input>
 			<br />
+
 			<div id="ecr_langueangle">
 				<label for="case_languangle" >Langue</label> : 
 			</div>
-			<textarea type="text" name="case_langueangle" id="case_langueangle" /></textarea>
-			<input type="submit" value="Envoyer" id="Bouton"/>
+			<textarea class='form-control' type="text" name="case_langueangle" id="case_langueangle" /></textarea>
+
+			<br>
+			<input class="btn btn-secondary" type="submit" value="Envoyer" id="Bouton"/>
+
 		</form>
 
 
@@ -37,6 +44,7 @@
 
 <!-- Affichage des informations contenu dans la base de données -->
 
+		<br><h4>Données contenues dans la base de données :</h4><br>
 		<?php
 			$reponse = $bdd->query('SELECT * FROM angle');// requête à effectué
 			while ($donnees = $reponse->fetch())// On affiche chaque entrée une à une

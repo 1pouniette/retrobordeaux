@@ -37,19 +37,19 @@
 
 				<div class="center-block" style="float:none;">
 					<a class="navbar-item" href="index.php?page=contact">
-						<img src="img/onglets_contact.svg" width="80%" height="80%" alt="Contact">
+						<img src="img/onglets_contact.svg" width="60%" height="60%" alt="Contact">
 					</a>	
 				</div>
 
 				<div class="center-block" style="float:none;">
 					<a class="navbar-item" href="index.php">
-						<img src="img/onglets_accueil.svg" width="80%" height="80%" alt="Accueil">
+						<img src="img/onglets_accueil.svg" width="60%" height="60%" alt="Accueil">
 					</a>	
 				</div>
 
 				<div class="center-block" style="float:none;">
 					<a class="navbar-item" href="index.php?page=about">
-						<img src="img/onglets_about.svg" width="80%" height="80%" alt="A propos">
+						<img src="img/onglets_about.svg" width="60%" height="60%" alt="A propos">
 					</a>						
 				</div>
 
@@ -86,6 +86,7 @@
 			  <li class="nav-item dropdown">
 			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ajouter...</a>
 			    <div class="dropdown-menu">
+					<a class="dropdown-item" href="index.php?page=angle">Ajouter un angle</a>
 					<a class="dropdown-item" href="index.php?page=article-form">Ajouter un article</a>
 					<a class="dropdown-item" href="index.php?page=langue">Ajouter une langue</a>
 					<a class="dropdown-item" href="index.php?page=motcle">Ajouter un mot clé</a>

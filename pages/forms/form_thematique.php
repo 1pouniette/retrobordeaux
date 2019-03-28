@@ -2,7 +2,7 @@
 
 //formulaire -->
 
-<h1>Ajouter une thématique</h1>
+<h1>Ajouter une thématique</h1><br>
 
 		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
 			
@@ -25,6 +25,7 @@
 			</div>
 			<textarea class="form-control" type="text" name="case_langtheme" id="case_langtheme" /></textarea>
 			
+			<br>
 			<input class="btn btn-secondary" type="submit" value="Envoyer" id="Bouton"/>
 
 		</form>
@@ -42,13 +43,14 @@
 ?>
 
 <!-- Affichage des informations contenu dans la base de données -->
-
+	<br><h4>Données contenues dans la base de données :</h4><br>
 		<?php
 			$reponse = $bdd->query('SELECT * FROM thematique');// requête à effectué
 			while ($donnees = $reponse->fetch())// On affiche chaque entrée une à une
 			{
 		?>
 				<div id="thematique" >
+					
 							<?php echo $donnees['NumThem']; ?><br />
 				</div>
 		<?php
