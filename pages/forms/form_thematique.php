@@ -6,21 +6,21 @@
 
 		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
 			
-			<div id="ecr_numtheme">
+			<div>
 				<label for="case_numtheme" >Numéro de thématique</label> :
 			</div>
 			<input class="form-control" type="text" name="case_numtheme" id="case_numtheme" /></input>
 			<br />
 			
 
-			<div id="ecr_nomtheme">
+			<div>
 				<label for="case_nomtheme" >Intitulé thématique</label> :
 			</div>
 			<input class="form-control" type="text" name="case_nomtheme" id="case_nomtheme" /></input>
 			<br />
 			
 			
-			<div id="ecr_langtheme">
+			<div>
 				<label for="case_langtheme" >Langue</label> :
 			</div>
 			<textarea class="form-control" type="text" name="case_langtheme" id="case_langtheme" /></textarea>
@@ -42,17 +42,4 @@
 		$exec = $bdd->query($requete); // exécuter la requete
 ?>
 
-<!-- Affichage des informations contenu dans la base de données -->
-	<br><h4>Données contenues dans la base de données :</h4><br>
-		<?php
-			$reponse = $bdd->query('SELECT * FROM thematique');// requête à effectué
-			while ($donnees = $reponse->fetch())// On affiche chaque entrée une à une
-			{
-		?>
-				<div id="thematique" >
-					
-							<?php echo $donnees['NumThem']; ?><br />
-				</div>
-		<?php
-			}
-		?>
+

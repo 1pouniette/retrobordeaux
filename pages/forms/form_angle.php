@@ -5,19 +5,19 @@
 
 		<form method="post" action="" class='form-group'> <!--  action = page contenant du php pour récupérer les informations -->
 			
-			<div id="ecr_numangle">
+			<div>
 				<label for="case_numangle" >Numéro d'angle</label> : 
 			</div>
 			<input class='form-control' type="text" name="case_numangle" id="case_numangle" /></input>
 			<br />
 
-			<div id="ecr_nomangle">
+			<div>
 				<label for="case_nomangle" >Nom de l'angle</label> : 
 			</div>
 			<input class='form-control' type="text" name="case_nomangle" id="case_nomangle" /></input>
 			<br />
 
-			<div id="ecr_langueangle">
+			<div>
 				<label for="case_languangle" >Langue</label> : 
 			</div>
 			<textarea class='form-control' type="text" name="case_langueangle" id="case_langueangle" /></textarea>
@@ -38,22 +38,3 @@
         $requete="INSERT INTO angle VALUES ('$case_numangle','$case_nomangle','$case_langueangle')"; // création de la requete pour enregistrer l'avis
 		$exec = $bdd->query($requete); // exécuter la requete
 ?>
-
-
-
-
-<!-- Affichage des informations contenu dans la base de données -->
-
-		<br><h4>Données contenues dans la base de données :</h4><br>
-		<?php
-			$reponse = $bdd->query('SELECT * FROM angle');// requête à effectué
-			while ($donnees = $reponse->fetch())// On affiche chaque entrée une à une
-			{
-		?>
-				<div id="angle" >
-					<?php echo $donnees['NumAngl']; ?><br />
-				</div>
-					
-		<?php
-			}
-		?>

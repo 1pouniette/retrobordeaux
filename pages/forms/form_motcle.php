@@ -6,21 +6,21 @@
 
 		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
 			
-			<div id="ecr_nummotcle">
+			<div>
 				<label for="case_nummotcle" >Numéro de mot clé</label> :
 			</div>
 			<input class="form-control" type="text" name="case_nummotcle" id="case_nummotcle" /></input>
 			<br />
 			
 			
-			<div id="ecr_nommotcle">
+			<div>
 				<label for="case_nommotcle" >Mot clé</label> :
 			</div>
 			<input class="form-control" type="text" name="case_nommotcle" id="case_nommotcle" /></input>
 			<br />
 			
 			
-			<div id="ecr_langmotcle">
+			<div>
 				<label for="case_langmotcle" >Langue</label> :
 			</div>
 			<textarea  class="form-control" type="text" name="case_langmotcle" id="case_langmotcle" /></textarea>
@@ -41,18 +41,3 @@
         $requete="INSERT INTO motcle VALUES ('$case_nummotcle','$case_nommotcle','$case_langmotcle')"; // création de la requete pour enregistrer l'avis
 		$exec = $bdd->query($requete); // exécuter la requete
 ?>
-
-<!-- Affichage des informations contenu dans la base de données -->
-<br><h4>Données contenues dans la base de données :</h4><br>
-		<?php
-			$reponse = $bdd->query('SELECT * FROM motcle');// requête à effectué
-			while ($donnees = $reponse->fetch())// On affiche chaque entrée une à une
-			{
-		?>
-				<div id="motcle" >
-
-							<?php echo $donnees['NumMoCle']; ?><br />
-				</div>
-		<?php
-			}
-		?>

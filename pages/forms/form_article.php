@@ -3,77 +3,77 @@
 
 		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_NumArt" >Numéro de l'article</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_NumArt" id="case_NumArt" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_create" >Date de création</label> : 
 			</div>
 			<input class="form-control" type="date" name="case_create" id="case_create" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_title" >Titre</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_title" id="case_title" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_chapo" >Chapo</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_chapo" id="case_chapo" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_text1" >Paragraphe 1</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_text1" id="case_text1" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_sstitle1" >Sous-Titre 1</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_sstitle1" id="case_sstitle1" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_text2" >Paragraphe 2</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_text2" id="case_text2" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_sstitle2" >Sous-Titre 2</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_sstitle2" id="case_sstitle2" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_text3" >Paragraphe 3</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_text3" id="case_text3" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_conclu" >Conclusion</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_conclu" id="case_conclu" /></input>
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="case_foto" >Photo</label> : 
 			</div>
 			
@@ -81,7 +81,7 @@
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="NumAngl" >Numéro de l'angle</label> : 
 			</div>
 			<select class="form-control" name="NumAngl" id="NumAngl">
@@ -101,7 +101,7 @@
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="NumThem1" >Numéro de la thématique</label> : 
 			</div>
 			<select class="form-control" name="NumThem1" id="NumThem1">
@@ -121,7 +121,7 @@
 			<br />
 
 
-			<div id="ecr_produit">
+			<div>
 				<label for="NumLang" >Langue</label> : 
 			</div>
 			<select class="form-control" name="NumLang" id="NumLang">

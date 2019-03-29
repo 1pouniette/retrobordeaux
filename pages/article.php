@@ -32,7 +32,7 @@
 			<p><?= $article->Parag3A ?></p>
 			
 			<h6><?= $article->LibConclA ?></h6>
-			
+			<?php var_dump($motcle) ?>
 			<p>mots-clés : <?= $motcle->LibMoCle ?></p>
 
 			<p><?= $article->LiensExternes ?></p>

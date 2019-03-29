@@ -6,21 +6,21 @@
 
 		<form method="post" action="" class="form-group"> <!--  action = page contenant du php pour récupérer les informations -->
 			
-			<div id="ecr_numlangue">
+			<div>
 				<label for="case_numlangue" >Numéro de langue</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_numlangue" id="case_numlangue" /></input>
 			<br />
 
 
-			<div id="ecr_nomlangue">
+			<div>
 				<label for="case_nomlangue" >Nom de langue</label> : 
 			</div>
 			<input class="form-control" type="text" name="case_nomlangue" id="case_nomlangue" /></input>
 			<br />
 
 
-			<div id="ecr_nomlangue2">
+			<div>
 				<label for="case_nomlangue2" >Langue</label> : 
 			</div>
 			<textarea class="form-control" type="text" name="case_nomlangue2" id="case_nomlangue2" /></textarea>
@@ -41,21 +41,3 @@
         $requete="INSERT INTO langue VALUES ('$case_numlangue','$case_nomlangue','$case_nomlangue2')"; // création de la requete pour enregistrer l'avis
 		$exec = $bdd->query($requete); // exécuter la requete
 ?>
-
-
-
-<!-- Affichage des informations contenu dans la base de données -->
-<br><h4>Données contenues dans la base de données :</h4><br>
-		<?php
-			$reponse = $bdd->query('SELECT * FROM langue');// requête à effectué
-			while ($donnees = $reponse->fetch())// On affiche chaque entrée une à une
-			{
-		?>
-				<div id="langue" >
-					
-					<?php echo $donnees['NumLang']; ?><br />
-				</div>
-					
-		<?php
-			}
-		?>

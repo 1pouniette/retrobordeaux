@@ -28,8 +28,11 @@
 	function getMotCle($id)
 	{
 		require('connexion.php');
-		$req = $bdd->prepare('SELECT motcle.LibMoCle FROM article, motclearticle, motcle WHERE article.NumArt = motclearticle.NumArt AND motcle.NumMoCle = motclearticle.NumMoCle AND NumArt = ?'); // requête avec jointure
+		$req = $bdd->prepare("SELECT motcle.LibMoCle FROM article, motclearticle, motcle WHERE article.NumArt = motclearticle.NumArt AND motcle.NumMoCle = motclearticle.NumMoCle AND article.NumArt = 'ART011' "); // requête avec jointure
+		
+
 		$req->execute(array($id));
+		
 		if($req->rowCount() == 1)
 		{
 			$data = $req->fetch(PDO::FETCH_OBJ);
