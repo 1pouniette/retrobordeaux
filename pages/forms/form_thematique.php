@@ -34,6 +34,9 @@
 <!-- Récupération pour les mettres dans la base de données -->
 
 <?php
+
+ini_set('display_errors','off'); //cache les messages d'erreur
+
 	include ('connexion.php'); // permet le lien avec la page de la connexion à la base (pas obligatoire si la connexion est déja dans la page)
         $case_numtheme = $_POST['case_numtheme']; // récupère la date de l'avis // l'information contenu dans les crochets vient du name mis dans le formulaire
 		$case_nomtheme = $_POST['case_nomtheme']; // récupère le produit de l'avis

@@ -96,7 +96,11 @@
 				<?php
 				}
 				 
+				ini_set('display_errors','off'); //cache les messages d'erreur
+
 				?>
+
+
 			</select>
 			<br />
 
