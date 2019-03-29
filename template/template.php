@@ -25,6 +25,8 @@
 <body>
 
 	<header>
+		<!-- lien connexion -->
+		<a href="formulaire_connexion.php">connexion</a>
 		
 		<!-- LOGO -->
 		<a href="index.php"><img class='mx-auto d-block'src="img/logo.png" href="#" alt="Logo Rétrobordeaux" height="25%" width="25%"></a>
