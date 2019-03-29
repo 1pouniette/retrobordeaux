@@ -33,8 +33,12 @@
 			
 			<h6><?= $article->LibConclA ?></h6>
 
-			<p>mots-clés : <?= $motcle->LibMoCle ?></p>
-
 			<p><?= $article->LiensExternes ?></p>
 
 			<p>Elise DUGUE, Julie HELDERLE, Coralie LEFEVRE, Tracy NG SING KWONG.</p>
+			
+				<!--Supprimer et Modifier l'article-->
+			<button type="button" class="btn btn-outline-secondary" href="supprarticle.php?id=<?= $article->NumArt ?>">Supprimer</button>
+			<button type="button" class="btn btn-outline-secondary" href="Form_Article.php?edit=<?= $article->NumArt ?>">Modifier</button>
+		
+

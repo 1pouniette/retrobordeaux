@@ -13,19 +13,19 @@
 			<br />
 
 			<div>
-				<label for="case_nomangle" >Nom de l'angle</label> : 
+				<label for="case_nomangle" >Nom de l'angle (l'angle ne peut être enregistré que dans la langue française)</label> : 
 			</div>
 			<input class='form-control' type="text" name="case_nomangle" id="case_nomangle" /></input>
 			<br />
 
-			<div>
+			<!--<div>
 				<label for="case_languangle" >Langue</label> : 
 			</div>
 			<textarea class='form-control' type="text" name="case_langueangle" id="case_langueangle" /></textarea>
-
+			-->
 			<br>
 			<input class="btn btn-secondary" type="submit" value="Envoyer" id="Bouton"/>
-
+			
 		</form>
 
 
@@ -35,10 +35,10 @@
 
 ini_set('display_errors','off'); //cache les messages d'erreur
 
-	include ('connexion.php'); // permet le lien avec la page de la connexion à la base (pas obligatoire si la connexion est déja dans la page)
-        $case_numangle = $_POST['case_numangle']; // récupère la date de l'avis // l'information contenu dans les crochets vient du name mis dans le formulaire
-		$case_nomangle = $_POST['case_nomangle']; // récupère le produit de l'avis
-		$case_langueangle = $_POST['case_langueangle']; // récupère l'avis
+	include ('connexion.php'); 
+        $case_numangle = $_POST['case_numangle']; 
+		$case_nomangle = $_POST['case_nomangle']; 
+		$case_langueangle = "FRAN01"; 
         $requete="INSERT INTO angle VALUES ('$case_numangle','$case_nomangle','$case_langueangle')"; // création de la requete pour enregistrer l'avis
 		$exec = $bdd->query($requete); // exécuter la requete
 ?>
