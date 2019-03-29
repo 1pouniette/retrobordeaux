@@ -38,7 +38,7 @@
 			<div id="textes_onglets" class="row justify-content-center">
 
 				<div class="center-block" style="float:none;">
-					<a class="navbar-item" href="index.php?page=contact">
+					<a class="navbar-item" href="mailto:coralie.lefevre@mmibordeaux.com">
 						<img src="img/onglets_contact.svg" width="60%" height="60%" alt="Contact">
 					</a>	
 				</div>
