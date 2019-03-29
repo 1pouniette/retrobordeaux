@@ -106,7 +106,7 @@
 
 
 			<div>
-				<label for="NumThem1" >Numéro de la thématique</label> : 
+				<label for="NumThem1" >Thématique</label> : 
 			</div>
 			<select class="form-control" name="NumThem1" id="NumThem1">
      			<?php
@@ -116,7 +116,7 @@
 				while ($donnees = $reponse->fetch())
 				{
 				?>
-				           <option value="<?php echo($donnees['NumThem']); ?>"> <?php echo $donnees['LibThem']; ?></option>
+				           <option value="<?php echo($donnees['LibThem']); ?>"> <?php echo $donnees['LibThem']; ?></option>
 				<?php
 				}
 				 
@@ -136,13 +136,135 @@
 				while ($donnees = $reponse->fetch())
 				{
 				?>
-				           <option value="<?php echo($donnees['NumLang']); ?>"> <?php echo $donnees['Lib1Lang']; ?></option>
+				           <option value="<?php echo($donnees['LibLang']); ?>"> <?php echo $donnees['Lib1Lang']; ?></option>
 				<?php
 				}
 				 
 				?>
 			</select>
 			<br />
+
+
+<div class="form-row">
+	<div class="col">
+
+			<div>
+				<label for="NumMoCle" >Mot-clé 1</label> : 
+			</div>
+			<select class="form-control" name="MotCle1" id="NumMoCle">
+     			<?php
+ 				include ('connexion.php');
+				$reponse = $bdd->query('SELECT * FROM motcle');
+				 
+				while ($donnees = $reponse->fetch())
+				{
+				?>
+				           <option value="<?php echo($donnees['LibMoCle']); ?>"> <?php echo $donnees['LibMoCle']; ?></option>
+				<?php
+				}
+				 
+				?>
+			</select>
+			<br />
+
+	</div>
+	<div class="col">		
+
+			<div>
+				<label for="NumMoCle" >Mot-clé 2</label> : 
+			</div>
+			<select class="form-control" name="MotCle2" id="NumMoCle">
+     			<?php
+ 				include ('connexion.php');
+				$reponse = $bdd->query('SELECT * FROM motcle');
+				 
+				while ($donnees = $reponse->fetch())
+				{
+				?>
+				           <option value="<?php echo($donnees['LibMoCle']); ?>"> <?php echo $donnees['LibMoCle']; ?></option>
+				<?php
+				}
+				 
+				?>
+			</select>
+			<br />
+
+	</div>
+	<div class="col">
+
+			<div>
+				<label for="NumMoCle" >Mot-clé 3</label> : 
+			</div>
+			<select class="form-control" name="MotCle3" id="NumMoCle">
+     			<?php
+ 				include ('connexion.php');
+				$reponse = $bdd->query('SELECT * FROM motcle');
+				 
+				while ($donnees = $reponse->fetch())
+				{
+				?>
+				           <option value="<?php echo($donnees['LibMoCle']); ?>"> <?php echo $donnees['LibMoCle']; ?></option>
+				<?php
+				}
+				 
+				?>
+			</select>
+			<br />
+
+	</div>
+	</div>
+	<div class="form-row">
+		<div class="col">		
+
+			<div>
+				<label for="NumMoCle" >Mot-clé 4</label> : 
+			</div>
+			<select class="form-control" name="MotCle4" id="NumMoCle">
+     			<?php
+ 				include ('connexion.php');
+				$reponse = $bdd->query('SELECT * FROM motcle');
+				 
+				while ($donnees = $reponse->fetch())
+				{
+				?>
+				           <option value="<?php echo($donnees['LibMoCle']); ?>"> <?php echo $donnees['LibMoCle']; ?></option>
+				<?php
+				}
+				 
+				?>
+			</select>
+			<br />
+
+		</div>
+		<div class='col'>	
+
+			<div>
+				<label for="NumMoCle" >Mot-clé 5</label> : 
+			</div>
+			<select class="form-control" name="MotCle5" id="NumMoCle">
+     			<?php
+ 				include ('connexion.php');
+				$reponse = $bdd->query('SELECT * FROM motcle');
+				 
+				while ($donnees = $reponse->fetch())
+				{
+				?>
+				           <option value="<?php echo($donnees['LibMoCle']); ?>"> <?php echo $donnees['LibMoCle']; ?></option>
+				<?php
+				}
+				 
+				?>
+			</select>
+			<br />
+
+		</div>
+
+		<div class='col'></div>
+
+		</div>
+
+
+
 
 
 			<input class="btn btn-secondary" type="submit" value="Envoyer" id="Bouton"/>
@@ -163,8 +285,23 @@
 		$case_conclu = $_POST['case_conclu'];
 		$case_foto = $_POST['case_foto'];
 		$NumAngl = $_POST['NumAngl'];
-		$NumThem1 =  $_POST['NumThem1'];;
+		$NumThem1 =  $_POST['NumThem1'];
 		$NumLang=$_POST['NumLang'];
-        $requete="INSERT INTO article VALUES ('$case_NumArt','$case_create','$case_title','$case_chapo','$case_text1','$case_sstitle1','$case_text2','$case_sstitle2','$case_text3','$case_conclu','$case_foto','$NumAngl','$NumThem1','$NumLang')"; // création de la requete pour enregistrer l'avis
+
+		$MotCle1=$_POST['MotCle1'];
+		$MotCle2=$_POST['MotCle2'];
+		$MotCle3=$_POST['MotCle3'];
+		$MotCle4=$_POST['MotCle4'];
+		$MotCle5=$_POST['MotCle5'];
+
+		var_dump($MotCle1);
+		var_dump($MotCle2);
+		var_dump($MotCle3);
+		var_dump($MotCle4);
+		var_dump($MotCle5);
+
+
+
+        $requete="INSERT INTO article (NumArt, DtCreA, LibTitrA, LibChapoA, Parag1A, LibSsTitr1, Parag2A, LibSsTitr2, Parag3A, LibConclA, UrlPhotA, LiensExternes, NumAngl, NumThem, NumLang, NumMoCle, MotCle1, MotCle2, MotCle3, MotCle4, MotCle5) VALUES ('$case_NumArt','$case_create','$case_title','$case_chapo','$case_text1','$case_sstitle1','$case_text2','$case_sstitle2','$case_text3','$case_conclu','$case_foto', 'NULL', '$NumAngl','$NumThem1','$NumLang', 'NULL', '$MotCle1','$MotCle2','$MotCle3','$MotCle4','$MotCle5')"; // création de la requete pour enregistrer l'avis
 		$exec = $bdd->query($requete); // exécuter la requete
-?>
+
