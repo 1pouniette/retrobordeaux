@@ -27,15 +27,9 @@
 
 
     </form>
-<<<<<<< Updated upstream:pages/forms/form_connexion.php
 
-=======
-	
 	<!-- test si un utilisateur est déja connecter -->
 	<?php
 
 	?>
 
-  </body>
-</html>
->>>>>>> Stashed changes:formulaire_connexion.php
